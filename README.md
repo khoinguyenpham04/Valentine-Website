@@ -1,14 +1,9 @@
-# Kado
--Flower code from: https://codepen.io/mdusmanansari/pen/BamepLe
-
-
 # Description
-Flower code tiktok trend 
-
-Responsive Web -- bisa langsung disesuikan di file css --> style.css
+This website is a gift for a loved one for Valentine.
 
 # Author
-- Flower Code : Md Usman Ansari (@MdUsmanAnsari)
-- Index Code : Septian Dwi Cahyo (@Septiandwica)
+- Landing page: Khoi Nguyen Pham
+- Flower Code : Md Usman Ansari 
+- Index Code : Septian Dwi Cahyo 
 
-Thanks to codepan and mdusmanansari
+
