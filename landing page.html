@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffb6c1;
+        }
+        #question {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .answer-box {
+            display: inline-block;
+            padding: 1rem 3rem;
+            font-size: 2rem;
+            text-align: center;
+            cursor: pointer;
+            border: 2px solid #333;
+            transition: transform 0.2s ease-in-out;
+        }
+        .no-box {
+            margin-left: 3rem;
+        }
+        .no-box:active {
+            transform: scale(1.5);
+        }
+        .yes-box {
+            background-color: #ffcccc;
+        }
+        .yes-box:active {
+            transform: scale(1.5);
+        }
+        .yes-box:active + .no-box {
+            margin-left: -25%;
+        }
+        .yes-box a {
+            color: #333;
+            text-decoration: none;
+        }
+        .gif-container {
+            margin-top: 1rem;
+            width: 50%;
+            max-width: 150px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">Do you want to be my valentine?</div>
+    <div class="answer-box yes-box">
+        <a href="index.html">💖🌹Yes🌹💖</a>
+    </div>
+    <div style="height: 2rem;"></div>
+    <div class="answer-box no-box" onclick="increaseYesBox()">🚫🚫No🚫🚫</div>
+    <div class="gif-container">
+        <img src="https://i0.wp.com/dianaurban.com/wp-content/uploads/2017/07/19-cute-kitten.gif?resize=330%2C328&ssl=1" alt="Valentine's Day Gif">
+    </div>
+
+    <script>
+        function increaseYesBox() {
+            const yesBox = document.querySelector('.yes-box');
+            yesBox.style.transform = 'scale(3.0)';
+            setTimeout(() => {
+                yesBox.style.transform = 'scale(1)';
+            }, 200);
+        }
+    </script>
+</body>
+</html>
